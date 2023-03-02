@@ -93,8 +93,8 @@ const employee ={template:`
         </div>
         <div class="p-2 w-50 bd-highlight">
             <img width="250px" height="250px"
-                v-bind:src="PhotoPath+PhotoFileName"/>
-            <input class="m-2" type="file" @change="imageUpload" placeholder="{{emp.PhotoFileName}}">
+                :src="PhotoPath+PhotoFileName"/>
+            <input class="m-2" type="file" @change="imageUpload">
         </div>
     </div>
         <button type="button" @click="createClick()"
